@@ -4,14 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" /> 
+    
+    
     <title>Page 3</title>
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/modulepreload-polyfill-3cfb730f.js"></script>
+    <script type="module" crossorigin src="/goit-js-hw-10/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-77e16229.js">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-7a007824.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/2-snackbar-40622acb.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/reset-d3b5fc92.css">
   </head>
   <body>
     <section>
-      <a href="./index.html">Go to home</a>
-      <h1>Welcome to page 3</h1>
+      <a class="backhome" href="./index.html">Go to home</a>
+      <h1 class="title">Snackbar</h1>
     </section>
+    <section class="thumb">
+      <form class="form">
+        <label class="label-delay">
+          Delay (ms)
+          <input class="data-input" type="number" name="delay" required />
+        </label>
+      
+        <fieldset class="frame">
+          <legend class="legend">State</legend>
+          <label class="label-radio">
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label class="label-radio">
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+      
+        <button class="btn-start" type="submit">Create notification</button>
+      </form>
+    </section>
+
     
   </body>
 </html>
